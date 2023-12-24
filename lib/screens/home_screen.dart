@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
+  var height, width;
+
+  List gambar = ["emas.png", "listrik.png", "rupiah.png", "topup.png"];
   @override
   Widget build(BuildContext context) {
+    height = MediaQuery.of(context).size.height;
+    width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: ListView(
         children: [
@@ -11,20 +16,39 @@ class HomeScreen extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.deepPurple[800],
                 borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(20),
-                  bottomRight: Radius.circular(20),
+                  bottomLeft: Radius.circular(40),
+                  bottomRight: Radius.circular(40),
                 )),
             child: Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 3, bottom: 15),
-                      child: Image(
-                        image: AssetImage('images/emas.png'),
-                        width: 50,
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 3, bottom: 0),
+                          child: Image(
+                              image: AssetImage(
+                                'images/rupiah.png',
+                              ),
+                              width: 30),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(
+                            left: 0,
+                          ),
+                          child: Text(
+                            " 1.000.000",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.amber[400],
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     IconButton(
                       icon: Icon(
@@ -36,31 +60,43 @@ class HomeScreen extends StatelessWidget {
                     )
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 3, bottom: 15),
-                      child: Image(
-                          image: AssetImage(
-                            'images/rupiah.png',
-                          ),
-                          width: 30),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(
-                        bottom: 15,
-                      ),
-                      child: Text(
-                        " 1.000.000",
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  height: height * 0.07,
+                  width: width * 0.9,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(color: Colors.black, width: 2),
+                  ),
+                  child: Center(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 15, right: 15),
+                      child: TextFormField(
                         style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.amber[400],
-                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
                         ),
+                        autovalidateMode: AutovalidateMode.onUserInteraction,
+                        decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "Cari....",
+                            hintStyle: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20,
+                            ),
+                            prefixIcon: Icon(
+                              Icons.search,
+                              color: Colors.black,
+                              size: width * 0.08,
+                            )),
                       ),
-                    )
-                  ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 10),
@@ -232,8 +268,102 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(
+            height: 20,
+          ),
+          Container(
+            padding: EdgeInsets.only(
+              top: 5,
+              left: 15,
+              right: 15,
+              bottom: 20,
+            ),
+            decoration: BoxDecoration(
+              color: Colors.deepPurple[800],
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(40),
+                topRight: Radius.circular(40),
+              ),
+            ),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Text(
+                        "Spesial Untuk Anda",
+                        style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 200,
+                  child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      itemCount: gambar.length,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: width * 0.02,
+                            vertical: height * 0.02,
+                          ),
+                          child: InkWell(
+                            onTap: () {},
+                            child: Container(
+                              width: width * 0.5,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(25),
+                                  color: Colors.white,
+                                  image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image:
+                                        AssetImage("images/${gambar[index]}"),
+                                  )),
+                            ),
+                          ),
+                        );
+                      }),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
   }
 }
+
+// SizedBox(
+//             height: 200,
+//             child: ListView.builder(
+//                 scrollDirection: Axis.horizontal,
+//                 shrinkWrap: true,
+//                 itemCount: gambar.length,
+//                 itemBuilder: (context, index) {
+//                   return Padding(
+//                     padding: EdgeInsets.symmetric(
+//                       horizontal: width * 0.05,
+//                       vertical: height * 0.01,
+//                     ),
+//                     child: InkWell(
+//                       onTap: () {},
+//                       child: Container(
+//                         width: width * 0.6,
+//                         decoration: BoxDecoration(
+//                             borderRadius: BorderRadius.circular(25),
+//                             color: Colors.white,
+//                             image: DecorationImage(
+//                               fit: BoxFit.cover,
+//                               image: AssetImage("images/${gambar[index]}"),
+//                             )),
+//                       ),
+//                     ),
+//                   );
+//                 }),
+//           ),
