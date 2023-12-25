@@ -61,14 +61,14 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 5,
                 ),
                 Container(
                   height: height * 0.07,
                   width: width * 0.9,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
+                    borderRadius: BorderRadius.circular(30),
                     border: Border.all(color: Colors.black, width: 2),
                   ),
                   child: Center(
@@ -96,15 +96,15 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 5,
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 10),
                   child: Container(
                     padding: EdgeInsets.only(
-                        top: 20, bottom: 30, left: 15, right: 15),
+                        top: 0, bottom: 10, left: 10, right: 10),
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(30),
                         border: Border.all(color: Colors.black, width: 2),
                         color: Colors.white),
                     child: Column(children: [
@@ -112,7 +112,7 @@ class HomeScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsets.only(left: 25),
+                            padding: EdgeInsets.only(left: 30),
                             child: Column(
                               children: [
                                 IconButton(
@@ -187,7 +187,7 @@ class HomeScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsets.only(left: 25, top: 10),
+                            padding: EdgeInsets.only(left: 30, top: 10),
                             child: Column(
                               children: [
                                 IconButton(
@@ -234,7 +234,7 @@ class HomeScreen extends StatelessWidget {
                                   iconSize: 40,
                                 ),
                                 Text(
-                                  "Pendidikan",
+                                  "Study",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 )
                               ],
@@ -269,7 +269,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 10,
           ),
           Container(
             padding: EdgeInsets.only(
@@ -290,11 +290,11 @@ class HomeScreen extends StatelessWidget {
                 Row(
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(10),
+                      padding: EdgeInsets.only(top: 3, left: 15),
                       child: Text(
                         "Spesial Untuk Anda",
                         style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 18,
                             color: Colors.white,
                             fontWeight: FontWeight.bold),
                       ),
