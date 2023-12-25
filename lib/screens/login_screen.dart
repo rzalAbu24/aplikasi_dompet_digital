@@ -1,4 +1,4 @@
-import 'package:aplikasi_dompet_digital/screens/home_screen.dart';
+import 'package:aplikasi_dompet_digital/screens/bottomNavBar.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -60,7 +60,7 @@ class LoginScreen extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => HomeScreen(),
+                                  builder: (context) => LandingPage(),
                                 ));
                           },
                           child: Text(

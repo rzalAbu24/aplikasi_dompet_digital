@@ -338,32 +338,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-// SizedBox(
-//             height: 200,
-//             child: ListView.builder(
-//                 scrollDirection: Axis.horizontal,
-//                 shrinkWrap: true,
-//                 itemCount: gambar.length,
-//                 itemBuilder: (context, index) {
-//                   return Padding(
-//                     padding: EdgeInsets.symmetric(
-//                       horizontal: width * 0.05,
-//                       vertical: height * 0.01,
-//                     ),
-//                     child: InkWell(
-//                       onTap: () {},
-//                       child: Container(
-//                         width: width * 0.6,
-//                         decoration: BoxDecoration(
-//                             borderRadius: BorderRadius.circular(25),
-//                             color: Colors.white,
-//                             image: DecorationImage(
-//                               fit: BoxFit.cover,
-//                               image: AssetImage("images/${gambar[index]}"),
-//                             )),
-//                       ),
-//                     ),
-//                   );
-//                 }),
-//           ),
