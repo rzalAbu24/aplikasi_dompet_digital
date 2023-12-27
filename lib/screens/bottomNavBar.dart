@@ -35,7 +35,7 @@ class _LandingPageState extends State<LandingPage> {
             });
           },
           currentIndex: _buttomCurrentIndex,
-          selectedItemColor: Colors.deepPurple,
+          selectedItemColor: Colors.deepPurple[800],
           iconSize: 25,
           items: [
             BottomNavigationBarItem(
