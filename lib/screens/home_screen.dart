@@ -11,6 +11,40 @@ class HomeScreen extends StatelessWidget {
     height = MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
     return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        backgroundColor: Colors.deepPurple[800],
+        toolbarHeight: 90,
+        actions: [
+          Row(
+            children: [
+              IconButton(
+                  icon: Image.asset("images/emas.png"),
+                  iconSize: 40,
+                  onPressed: null),
+              Padding(
+                padding: EdgeInsets.only(right: 80),
+                child: Text(
+                  " Rp. 5.000.000.000",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              IconButton(
+                icon: Icon(
+                  Icons.email,
+                  size: 25,
+                ),
+                onPressed: () {},
+                color: Colors.white,
+              )
+            ],
+          ),
+        ],
+      ),
       body: ListView(
         children: [
           Container(
@@ -23,36 +57,6 @@ class HomeScreen extends StatelessWidget {
                 )),
             child: Column(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding:
-                              EdgeInsets.symmetric(horizontal: width * 0.01),
-                          child: Text(
-                            " Rp. 5.000.000.000",
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    IconButton(
-                      icon: Icon(
-                        Icons.email,
-                        size: 25,
-                      ),
-                      onPressed: () {},
-                      color: Colors.white,
-                    )
-                  ],
-                ),
                 SizedBox(
                   height: 5,
                 ),
