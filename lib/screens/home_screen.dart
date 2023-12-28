@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   var height, width;
 
-  List gambar = ["mcd.jpg", "kfc.jpg"];
+  List gambar = ["poster.jpg", "mcd.jpg", "kfc.jpg"];
   @override
   Widget build(BuildContext context) {
     height = MediaQuery.of(context).size.height;
@@ -316,7 +316,7 @@ class HomeScreen extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: 3, left: 15),
                       child: Text(
-                        "Spesial Untuk Anda",
+                        "Diskon Hingga 50%",
                         style: TextStyle(
                             fontSize: 18,
                             color: Colors.white,
