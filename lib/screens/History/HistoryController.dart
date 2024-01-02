@@ -26,12 +26,12 @@ class HistoryController extends State<TransactionCompleted> {
       "amount": 3000000,
     },{
       "image":"images/air.png",
-      "title": "PAYMENT",
+      "title": "AIR",
       "date": "21 Desember . 09:00",
       "amount": 100000,
     },{
       "image":"images/listrik.png",
-      "title": "PAYMENT",
+      "title": "LISTRIK",
       "date": "21 Desember . 09:20",
       "amount": 150000,
     },{
