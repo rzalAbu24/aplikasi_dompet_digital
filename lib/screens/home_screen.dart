@@ -65,8 +65,15 @@ class HomeScreen extends StatelessWidget {
                   width: width * 0.9,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(30),
-                    border: Border.all(color: Colors.black, width: 2),
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.deepPurple.withOpacity(0.8),
+                          spreadRadius: 5,
+                          offset: Offset(0, 3),
+                          blurRadius: 7)
+                    ],
+                    border: Border.all(color: Colors.deepPurple, width: 2),
                   ),
                   child: Center(
                     child: Padding(
@@ -102,7 +109,14 @@ class HomeScreen extends StatelessWidget {
                     padding: EdgeInsets.only(bottom: 10, left: 10, right: 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        border: Border.all(color: Colors.black, width: 2),
+                        border: Border.all(color: Colors.deepPurple, width: 2),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Colors.deepPurple.withOpacity(0.7),
+                              spreadRadius: 5,
+                              offset: Offset(0, 3),
+                              blurRadius: 7)
+                        ],
                         color: Colors.white),
                     child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
