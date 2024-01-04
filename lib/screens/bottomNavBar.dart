@@ -1,6 +1,6 @@
 import 'package:aplikasi_dompet_digital/screens/akun.dart';
 import 'package:aplikasi_dompet_digital/screens/history.dart';
-import 'package:aplikasi_dompet_digital/screens/pay.dart';
+import 'package:aplikasi_dompet_digital/screens/appBarPay.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_dompet_digital/screens/home_screen.dart';
 
@@ -14,7 +14,7 @@ class _LandingPageState extends State<LandingPage> {
   List<Widget> _container = [
     new HomeScreen(),
     new History(),
-    new Pay(),
+    new AppBarPay(),
     new Akun(),
   ];
 
