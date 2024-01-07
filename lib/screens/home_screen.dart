@@ -1,4 +1,4 @@
-import 'package:aplikasi_dompet_digital/screens/topup.dart';
+import 'package:aplikasi_dompet_digital/screens/topup_view.dart';
 import 'package:aplikasi_dompet_digital/screens/transfer.dart';
 import 'package:flutter/material.dart';
 
@@ -162,7 +162,7 @@ class HomeScreen extends StatelessWidget {
                                         Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                              builder: (context) => TopUp(),
+                                              builder: (context) => TopupView(),
                                             ));
                                       },
                                       iconSize: 40,
