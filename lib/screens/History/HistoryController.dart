@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:aplikasi_dompet_digital/screens/history.dart';
 import 'Transaction_Completed.dart';
 
 class HistoryController extends State<TransactionCompleted> {
@@ -16,44 +15,50 @@ class HistoryController extends State<TransactionCompleted> {
   void dispose() => super.dispose();
 
   @override
-  Widget build(BuildContext context) =>widget.build(context, this);
+  Widget build(BuildContext context) => widget.build(context, this);
 
   List historylist = [
     {
-      "image":"images/topup.png",
-      "title": "TOPUP",
+      "image": "images/topup.png",
+      "title": "Isi Saldo",
       "date": "20 Desember . 14:00",
-      "amount": 3000000,
-    },{
-      "image":"images/air.png",
-      "title": "AIR",
+      "amount": "Rp3000000",
+    },
+    {
+      "image": "images/air.png",
+      "title": "Pembayaran Air",
       "date": "21 Desember . 09:00",
-      "amount": 100000,
-    },{
-      "image":"images/listrik.png",
-      "title": "LISTRIK",
+      "amount": "Rp100000",
+    },
+    {
+      "image": "images/listrik.png",
+      "title": "Pembayaran Listrik",
       "date": "21 Desember . 09:20",
-      "amount": 150000,
-    },{
-      "image":"images/kentakifallchicken.png",
-      "title": "PAYMENT",
+      "amount": "Rp150000",
+    },
+    {
+      "image": "images/kentakifallchicken.png",
+      "title": "Pembayaran",
       "date": "24 Desember . 14:21",
-      "amount": 45000,
-    },{
-      "image":"images/mcdayat's.png",
-      "title": "PAYMENT",
+      "amount": "Rp45000",
+    },
+    {
+      "image": "images/mcdayat's.png",
+      "title": "Pembayaran",
       "date": "29 Desember . 09:20",
-      "amount": 32000,
-    },{
-      "image":"images/zainal.png",
-      "title": "TRANSFER",
+      "amount": "Rp32000",
+    },
+    {
+      "image": "images/zainal.png",
+      "title": "Transfer",
       "date": "29 Desember . 09:20",
-      "amount": 1000000,
-    },{
-      "image":"images/brimo.png",
-      "title": "RECIEVE",
+      "amount": "Rp1000000",
+    },
+    {
+      "image": "images/brimo.png",
+      "title": "Saldo Masuk",
       "date": "31 Desember . 09:20",
-      "amount": 3000000,
+      "amount": "Rp3000000",
     },
   ];
 }
