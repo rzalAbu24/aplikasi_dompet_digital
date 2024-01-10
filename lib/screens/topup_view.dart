@@ -15,10 +15,9 @@ class TopupView extends StatefulWidget {
           title: const Text('Isi Saldo'),
           actions: [],
           foregroundColor: Colors.white,
-          backgroundColor: Color(0xFF674AEF),
+          backgroundColor: Colors.deepPurple[800],
           elevation: 0,
           centerTitle: true,
-          leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
         ),
         body: SingleChildScrollView(
           child: Container(
@@ -27,7 +26,7 @@ class TopupView extends StatefulWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Mau isi Saldo Dana kamu dengan cara apa?",
+                  "Mau isi Saldo E-Mas kamu dengan cara apa?",
                   style: TextStyle(fontSize: 23.0, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
@@ -314,7 +313,7 @@ class TopupView extends StatefulWidget {
                             // trailing: const
                             // );
                           }),
-                           ListTile(
+                      ListTile(
                         title: Text(
                           "Tampilkan Semua Agen",
                           style: TextStyle(
