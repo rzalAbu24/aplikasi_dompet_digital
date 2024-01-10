@@ -10,7 +10,7 @@ class AppBarPay extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
-          backgroundColor: Color(0xFF4527A0),
+          backgroundColor: Colors.deepPurple[800],
           bottom: const TabBar(
             tabs: [
               Tab(
@@ -23,7 +23,6 @@ class AppBarPay extends StatelessWidget {
           ),
           title: const Text(
             'Pembayaran',
-            style: TextStyle(fontSize: 25),
           ),
         ),
         body: TabBarView(children: [QRViewExample(), QrCode()]),
