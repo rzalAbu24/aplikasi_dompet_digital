@@ -1,4 +1,4 @@
-import 'package:aplikasi_dompet_digital/screens/home_screen.dart';
+import 'package:aplikasi_dompet_digital/screens/Pay/pay.dart';
 import 'package:flutter/material.dart';
 
 class Transfer extends StatelessWidget {
@@ -9,7 +9,6 @@ class Transfer extends StatelessWidget {
     width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        
         backgroundColor: Colors.deepPurple[800],
         toolbarHeight: 70,
         actions: [
@@ -27,7 +26,6 @@ class Transfer extends StatelessWidget {
                   ),
                 ),
               ),
-              
             ],
           ),
         ],
@@ -119,19 +117,12 @@ class Transfer extends StatelessWidget {
                                   children: [
                                     IconButton(
                                       icon: Image.asset('images/bri.png'),
-                                      onPressed: () {
-                                        Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) => Transfer(),
-                                            ));
-                                      },
+                                      onPressed: () {},
                                       iconSize: 40,
                                     ),
                                     Text(
-                                      "Zainal",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
+                                      "Zainal A",
+                                      style: TextStyle(color: Colors.grey[700]),
                                     )
                                   ],
                                 ),
@@ -145,13 +136,12 @@ class Transfer extends StatelessWidget {
                                   children: [
                                     IconButton(
                                       icon: Image.asset('images/bni.png'),
-                                      onPressed: () {                                   },
+                                      onPressed: () {},
                                       iconSize: 40,
                                     ),
                                     Text(
-                                      "Rizal",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
+                                      "Abu Rizal",
+                                      style: TextStyle(color: Colors.grey[700]),
                                     )
                                   ],
                                 ),
@@ -169,9 +159,8 @@ class Transfer extends StatelessWidget {
                                       iconSize: 40,
                                     ),
                                     Text(
-                                      "Rohid",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
+                                      "Rohid R",
+                                      style: TextStyle(color: Colors.grey[700]),
                                     )
                                   ],
                                 ),
@@ -189,9 +178,8 @@ class Transfer extends StatelessWidget {
                                       iconSize: 40,
                                     ),
                                     Text(
-                                      "Hafidz",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
+                                      "Hafidz A",
+                                      style: TextStyle(color: Colors.grey[700]),
                                     )
                                   ],
                                 ),
@@ -208,53 +196,13 @@ class Transfer extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     IconButton(
-                                      icon: Image.asset('images/mandiri.png'),
+                                      icon: Image.asset('images/bri.png'),
                                       onPressed: () {},
                                       iconSize: 40,
                                     ),
                                     Text(
-                                      "Haitami",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
-                                    )
-                                  ],
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: width * 0.02,
-                                    vertical: height * 0.01),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      icon: Image.asset('images/emas.png'),
-                                      onPressed: () {},
-                                      iconSize: 40,
-                                    ),
-                                    Text(
-                                      "Nopal",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
-                                    )
-                                  ],
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: width * 0.02,
-                                    vertical: height * 0.01),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      icon:
-                                          Image.asset('images/bri.png'),
-                                      onPressed: () {},
-                                      iconSize: 40,
-                                    ),
-                                    Text(
-                                      "Dayat",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
+                                      "Hidayat S",
+                                      style: TextStyle(color: Colors.grey[700]),
                                     )
                                   ],
                                 ),
@@ -272,9 +220,8 @@ class Transfer extends StatelessWidget {
                                       iconSize: 40,
                                     ),
                                     Text(
-                                      "Amin",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
+                                      "M. Amin",
+                                      style: TextStyle(color: Colors.grey[700]),
                                     )
                                   ],
                                 ),
@@ -288,7 +235,7 @@ class Transfer extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 30,
+            height: 10,
           ),
           Container(
             padding: EdgeInsets.only(
@@ -305,179 +252,168 @@ class Transfer extends StatelessWidget {
               ),
             ),
             child: Container(
-                    padding: EdgeInsets.only(bottom: 10, left: 10, right: 10),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(30),
-                        border: Border.all(color: Colors.deepPurple, width: 2),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.deepPurple.withOpacity(0.7),
-                              spreadRadius: 5,
-                              offset: Offset(0, 3),
-                              blurRadius: 7)
-                        ],
-                        color: Colors.white),
-                    child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+              padding: EdgeInsets.only(bottom: 10, left: 10, right: 10),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  border: Border.all(color: Colors.deepPurple, width: 2),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.deepPurple.withOpacity(0.7),
+                        spreadRadius: 5,
+                        offset: Offset(0, 3),
+                        blurRadius: 7)
+                  ],
+                  color: Colors.white),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: width * 0.02,
+                              vertical: height * 0.01),
+                          child: Column(
                             children: [
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: width * 0.02,
-                                    vertical: height * 0.01),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      icon: Image.asset('images/teman.png'),
-                                      onPressed: () {
-                                        Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (context) => Transfer(),
-                                            ));
-                                      },
-                                      iconSize: 40,
-                                    ),
-                                    Text(
-                                      "Ke Grup",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
-                                    )
-                                  ],
-                                ),
+                              IconButton(
+                                icon: Image.asset('images/teman.png'),
+                                onPressed: () {},
+                                iconSize: 40,
                               ),
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: width * 0.02,
-                                  vertical: height * 0.01,
-                                ),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      icon: Image.asset('images/teman.png'),
-                                      onPressed: () {                                   },
-                                      iconSize: 40,
-                                    ),
-                                    Text(
-                                      "Ke Teman",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
-                                    )
-                                  ],
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: width * 0.02,
-                                  vertical: height * 0.01,
-                                ),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      icon: Image.asset('images/bank.png'),
-                                      onPressed: () {},
-                                      iconSize: 40,
-                                    ),
-                                    Text(
-                                      "Ke Bank",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
-                                    )
-                                  ],
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: width * 0.02,
-                                  vertical: height * 0.01,
-                                ),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      icon: Image.asset('images/wallet.png'),
-                                      onPressed: () {},
-                                      iconSize: 40,
-                                    ),
-                                    Text(
-                                      "e-Wallet",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
-                                    )
-                                  ],
-                                ),
-                              ),
+                              Text(
+                                "Ke Grup",
+                                style: TextStyle(color: Colors.grey[700]),
+                              )
                             ],
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: width * 0.02,
+                            vertical: height * 0.01,
+                          ),
+                          child: Column(
                             children: [
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: width * 0.02,
-                                    vertical: height * 0.01),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      icon: Image.asset('images/tarik_tunai.png'),
-                                      onPressed: () {},
-                                      iconSize: 40,
-                                    ),
-                                    Text(
-                                      "Tarik Tunai",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
-                                    )
-                                  ],
-                                ),
+                              IconButton(
+                                icon: Image.asset('images/teman.png'),
+                                onPressed: () {},
+                                iconSize: 40,
                               ),
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: width * 0.02,
-                                    vertical: height * 0.01),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      icon: Image.asset('images/dana_kaget.png'),
-                                      onPressed: () {},
-                                      iconSize: 40,
-                                    ),
-                                    Text(
-                                      "E-Mas Kaget",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
-                                    )
-                                  ],
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: width * 0.02,
-                                    vertical: height * 0.01),
-                                child: Column(
-                                  children: [
-                                    IconButton(
-                                      icon:
-                                          Image.asset('images/scan.png'),
-                                      onPressed: () {},
-                                      iconSize: 40,
-                                    ),
-                                    Text(
-                                      "Code QR",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
-                                    )
-                                  ],
-                                ),
-                              ),
-                              
+                              Text(
+                                "Ke Teman",
+                                style: TextStyle(color: Colors.grey[700]),
+                              )
                             ],
                           ),
-                        ]),
-                  ),
-            
-            
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: width * 0.02,
+                            vertical: height * 0.01,
+                          ),
+                          child: Column(
+                            children: [
+                              IconButton(
+                                icon: Image.asset('images/bank.png'),
+                                onPressed: () {},
+                                iconSize: 40,
+                              ),
+                              Text(
+                                "Ke Bank",
+                                style: TextStyle(color: Colors.grey[700]),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: width * 0.02,
+                            vertical: height * 0.01,
+                          ),
+                          child: Column(
+                            children: [
+                              IconButton(
+                                icon: Image.asset('images/wallet.png'),
+                                onPressed: () {},
+                                iconSize: 40,
+                              ),
+                              Text(
+                                "e-Wallet",
+                                style: TextStyle(color: Colors.grey[700]),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: width * 0.02,
+                              vertical: height * 0.01),
+                          child: Column(
+                            children: [
+                              IconButton(
+                                icon: Image.asset('images/tarik_tunai.png'),
+                                onPressed: () {},
+                                iconSize: 40,
+                              ),
+                              Text(
+                                "Tarik Tunai",
+                                style: TextStyle(color: Colors.grey[700]),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: width * 0.02,
+                              vertical: height * 0.01),
+                          child: Column(
+                            children: [
+                              IconButton(
+                                icon: Image.asset('images/dana_kaget.png'),
+                                onPressed: () {},
+                                iconSize: 40,
+                              ),
+                              Text(
+                                "E-Mas Kaget",
+                                style: TextStyle(color: Colors.grey[700]),
+                              )
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: width * 0.02,
+                              vertical: height * 0.01),
+                          child: Column(
+                            children: [
+                              IconButton(
+                                icon: Image.asset('images/scan.png'),
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => QRViewExample(),
+                                      ));
+                                },
+                                iconSize: 40,
+                              ),
+                              Text(
+                                "Code QR",
+                                style: TextStyle(color: Colors.grey[700]),
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ]),
+            ),
           ),
         ],
       ),
