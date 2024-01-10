@@ -5,31 +5,29 @@ import 'package:flutter/material.dart';
 class History extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(length: 2, 
-    child: Scaffold(
-      appBar: AppBar( backgroundColor: Color(0xFF4527A0),
-      automaticallyImplyLeading: false,
-      bottom: const TabBar(
-        tabs: [
-          Tab(
-              text: "In Progress",
-        ),
-          Tab(
-              text: "Completed",
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.deepPurple[800],
+          automaticallyImplyLeading: false,
+          bottom: const TabBar(
+            tabs: [
+              Tab(
+                text: "Dalam Proses",
+              ),
+              Tab(
+                text: "Selesai",
+              ),
+            ],
           ),
-      ],
-    ),
-    title: const Text(
-      'Transaction History'  
-      ),
-    ),
-    body: TabBarView(
-      children: [
-      TransactionInProgres(),
-      TransactionCompleted(),
-      ]),
+          title: const Text('Riwayat Transaksi'),
+        ),
+        body: TabBarView(children: [
+          TransactionInProgres(),
+          TransactionCompleted(),
+        ]),
       ),
     );
-    
   }
 }
