@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(right: 80),
                 child: Text(
-                  " Rp. 5.000.000.000",
+                  " Rp5.000.000.000",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
@@ -168,7 +168,7 @@ class HomeScreen extends StatelessWidget {
                                       iconSize: 40,
                                     ),
                                     Text(
-                                      "Top Up",
+                                      "Isi Saldo",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold),
                                     )
@@ -271,7 +271,7 @@ class HomeScreen extends StatelessWidget {
                                       iconSize: 40,
                                     ),
                                     Text(
-                                      "Study",
+                                      "Pendidikan",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold),
                                     )
